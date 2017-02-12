@@ -1,6 +1,6 @@
 package com.vikaskumar.vsk.buttoncumgesture;
 
-import android.net.Uri;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         ///Layout///
 
-        RelativeLayout buckysLayout = new RelativeLayout(this);
+        RelativeLayout buckysLayout = (RelativeLayout) findViewById(R.id.RelativeLayout);
         buckysLayout.setBackgroundColor(Color.YELLOW);
+
 
         ////Begin Button and Text Activity////
 
@@ -130,5 +132,5 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         this.gestureDetector.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
-    
+
 }

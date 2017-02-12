@@ -10,14 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.vikaskumar.vsk.buttoncumgesture.MainActivity">
 
-    <Button
-        android:text="Click me Hoss!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/buckysButton" />
-
     <TextView
         android:text="Namaste!"
         android:layout_width="wrap_content"
@@ -27,4 +19,13 @@
         android:layout_marginBottom="64dp"
         android:id="@+id/buckysText"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Button
+        android:text="Click me Hoss!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
